@@ -1,0 +1,103 @@
+/* Card Set Styling */
+.card-set {
+  width: 90%; /* Make sure it uses 90% of the available width */
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.card-set img {
+  width: 150px; /* Size of the image */
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.card-set-info h3 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.card-set-info p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Flip Card Styling */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  border: 2px solid #ddd; /* Border before flip */
+  border-radius: 10px; /* Round the corners for a cleaner look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+/* Card inner container for flip effect */
+.innerCard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+
+/* Flip effect when hovering */
+.card:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+/* Term and Description Styling */
+.term,
+.description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+.term {
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  background-color: #dce7e8;
+  transform: rotateY(180deg);
+}
+
+/* Styling for the buttons */
+.add-new-set {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #45e9f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-new-set:hover {
+  background-color: #1f9bb7;
+}

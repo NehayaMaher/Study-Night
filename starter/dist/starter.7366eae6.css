@@ -1,0 +1,98 @@
+.card-set {
+  background-color: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.card-set img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.card-set-info h3 {
+  margin: 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-set-info p {
+  color: #333;
+  font-size: 1rem;
+}
+
+.card-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+.card {
+  perspective: 1000px;
+  width: 200px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.innerCard {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  transition: transform 1.5s;
+  position: relative;
+}
+
+.card:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.term, .description {
+  backface-visibility: hidden;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+
+.term {
+  font-size: 2rem;
+}
+
+.description {
+  background-color: #dce7e8;
+  font-size: 1.5rem;
+  transform: rotateY(180deg);
+}
+
+.add-new-set {
+  color: #fff;
+  cursor: pointer;
+  background-color: #45e9f5;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  transition: background-color .3s, transform .2s;
+  display: block;
+}
+
+.add-new-set:hover {
+  background-color: #1f9bb7;
+  transform: scale(1.05);
+}
+/*# sourceMappingURL=starter.7366eae6.css.map */

@@ -1,0 +1,58 @@
+/* تحسين تنسيق الـ Navbar */
+.primary_nav_bar {
+  background-color: #333;  /* خلفية داكنة للـ navbar */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.primary_nav_bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.primary_nav_bar ul li {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.primary_nav_bar ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* تغيير اللون عند المرور على العنصر */
+.primary_nav_bar ul li a:hover {
+  color: #45e9f5;  /* لون أزرق فاتح عند المرور */
+}
+
+/* إضافة تأثير على navbar عند المرور */
+.primary_nav_bar:hover {
+  background-color: #444;  /* تغيير الخلفية إلى لون أفتح عند المرور */
+}
+
+@media (max-width: 768px) {
+  .primary_nav_bar {
+    flex-direction: column;
+    align-items: center;  /* محاذاة العناصر في المنتصف على الشاشات الصغيرة */
+  }
+
+  .primary_nav_bar ul {
+    width: 100%;  /* جعل القائمة تأخذ عرض كامل العنصر */
+    text-align: center;  /* محاذاة النصوص في المنتصف */
+  }
+
+  .primary_nav_bar ul li {
+    margin: 10px 0;  /* مسافة بين العناصر */
+  }
+
+  .primary_nav_bar ul li a {
+    font-size: 16px;  /* تصغير حجم النص على الشاشات الصغيرة */
+  }
+}

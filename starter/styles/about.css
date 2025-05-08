@@ -1,0 +1,46 @@
+/* General About Section Styling */
+.about-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+.about-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Text inside the about section */
+.about-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Image Styling */
+/* تنسيق الصور داخل القسم About */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Hover Effect on Section */
+.about-section:hover {
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease-in-out;
+}
