@@ -4,7 +4,8 @@
   "description": "Flashcard App",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel starter/index.html",
+    "build": "parcel build starter/index.html",
     "gulp": "gulp"
   },
   "keywords": [

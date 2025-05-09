@@ -1,18 +1,56 @@
-body header {
-  cursor: pointer;
-  width: 100px;
+.primary_nav_bar {
+  background-color: #333;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
 }
 
-body header h1, nav li {
-  text-transform: uppercase;
+.primary_nav_bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-body header nav li {
-  border-bottom: 2px solid #d3d3d3;
-  margin: 10% 5%;
+.primary_nav_bar ul li {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-body header nav li:hover {
-  border-bottom-color: #45e9f5;
+.primary_nav_bar ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.primary_nav_bar ul li a:hover {
+  color: #45e9f5;
+}
+
+.primary_nav_bar:hover {
+  background-color: #444;
+}
+
+@media (width <= 768px) {
+  .primary_nav_bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary_nav_bar ul {
+    text-align: center;
+    width: 100%;
+  }
+
+  .primary_nav_bar ul li {
+    margin: 10px 0;
+  }
+
+  .primary_nav_bar ul li a {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=starter.003c3e08.css.map */
